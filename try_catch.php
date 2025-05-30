@@ -9,18 +9,18 @@
 
 <body>
     <?php
-    
-    define("texto","texto");
-    try{
-        if(define("texto","TEXTO")){
-            echo"Constante alterada com sucesso";
 
-    }else{
-        throw new Exception(message:"Variavel do tipo constante não pode ser alterada com sucesso!");
+    define("texto", "texto");
+    try {
+        if (define("texto", "TEXTO")) {
+            echo "Constante alterada com sucesso";
+
+        } else {
+            throw new Exception(message: "Variavel do tipo constante não pode ser alterada com sucesso!");
+        }
+    } catch (Exception $e) {
+        echo "Erro " . $e;
     }
-}catch(Exception $e){
-    echo "Erro ".$e;
-}
     ?>
 
 </body>
